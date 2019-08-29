@@ -20,7 +20,7 @@
   <bpmn2:itemDefinition id="__5311A1E8-3FDA-4209-A6C9-15C86319CA21_inputInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__5311A1E8-3FDA-4209-A6C9-15C86319CA21_codeOutputXItem" structureRef="Integer"/>
   <bpmn2:itemDefinition id="__5311A1E8-3FDA-4209-A6C9-15C86319CA21_outputOutputXItem" structureRef="String"/>
-  <bpmn2:error id="any" errorCode=""/>
+  <bpmn2:error id="any"/>
   <bpmn2:process id="handling-wih-exception.MainProcess" drools:packageName="com.myspace.handling_wih_exception" drools:version="1.0" drools:adHoc="false" name="MainProcess" isExecutable="true">
     <bpmn2:property id="input" itemSubjectRef="_inputItem" name="input"/>
     <bpmn2:property id="output" itemSubjectRef="_outputItem" name="output"/>
