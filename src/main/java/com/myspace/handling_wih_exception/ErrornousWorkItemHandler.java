@@ -27,6 +27,11 @@ public class ErrornousWorkItemHandler implements WorkItemHandler {
     @Override
     public void executeWorkItem(WorkItem workItem, WorkItemManager manager) {
         
+        String message = "Custom WIH execute (";
+        for ( String k : workItem.getParameters().keySet()) {
+            message += String.format("%s = %s, ",k, workItem.getParameter(k));
+        };
+        System.out.println(message + ")");
         if (processId != null && strategy != null) {
             
             throw new ProcessWorkItemHandlerException(processId, strategy, new RuntimeException("On purpose"));
@@ -37,8 +42,7 @@ public class ErrornousWorkItemHandler implements WorkItemHandler {
 
     @Override
     public void abortWorkItem(WorkItem workItem, WorkItemManager manager) {
-        
-
+        System.out.println("Custom WIH abort");
     }
 
 }
