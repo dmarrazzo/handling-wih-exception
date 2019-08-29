@@ -32,7 +32,9 @@ public class ErrornousWorkItemHandler implements WorkItemHandler {
             message += String.format("%s = %s, ",k, workItem.getParameter(k));
         };
         System.out.println(message + ")");
-        if (processId != null && strategy != null) {
+
+        String input = (String) workItem.getParameter("input");
+        if (processId != null && strategy != null && input != null && input.contains("error")) {
             
             throw new ProcessWorkItemHandlerException(processId, strategy, new RuntimeException("On purpose"));
         }
