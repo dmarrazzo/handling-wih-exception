@@ -198,7 +198,7 @@
     </bpmn2:subProcess>
     <bpmn2:boundaryEvent id="_71019623-A509-413F-843F-FA7851D96FE7" drools:boundaryca="true" drools:dockerinfo="405.9^276.4|" attachedToRef="_7DA265CB-5F2F-4A7F-A45F-AAB3ACFE7443">
       <bpmn2:outgoing>_DFAAE06F-84B1-47CF-B67E-ABFBE43192AF</bpmn2:outgoing>
-      <bpmn2:errorEventDefinition id="_FB8Tu8oxEem1ZOdqFw9sCA" drools:erefname="any" errorRef="any"/>
+      <bpmn2:errorEventDefinition id="_FB8Tu8oxEem1ZOdqFw9sCA" errorRef="any"/>
     </bpmn2:boundaryEvent>
   </bpmn2:process>
   <bpmndi:BPMNDiagram id="_FB86sMoxEem1ZOdqFw9sCA">
